@@ -12,7 +12,7 @@ function ThreadList() {
   }, [])
 
   const getAllThread = async () => {
-    await axios.get('http://localhost:8000/api/v1/thread/', {
+    await axios.get('https://top-g-server.herokuapp.com/api/v1/thread/', {
       headers: {
         Authorization: token,
       }

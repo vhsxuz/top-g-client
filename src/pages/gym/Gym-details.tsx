@@ -14,7 +14,7 @@ function GymDetails() {
   }, [])
 
   const getGym = async () => {
-    await axios.get(`http://localhost:8000/api/v1/gym/${id.id}`, {
+    await axios.get(`https://top-g-server.herokuapp.com/api/v1/gym/${id.id}`, {
       headers: {
         Authorization: token,
       }

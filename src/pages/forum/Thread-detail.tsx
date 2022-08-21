@@ -16,7 +16,7 @@ function ThreadDetail() {
   }, [])
 
   const getThread = async () => {
-    await axios.get(`http://localhost:8000/api/v1/thread/${id.id}`, {
+    await axios.get(`https://top-g-server.herokuapp.com/api/v1/thread/${id.id}`, {
       headers: {
         Authorization: token,
       }
